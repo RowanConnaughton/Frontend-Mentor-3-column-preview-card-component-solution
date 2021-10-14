@@ -1,0 +1,152 @@
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+$transparentWhite: hsla(0, 0%, 100%, 0.75);
+$veryLightGray: hsl(0, 0%, 95%);
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: $veryLightGray;
+}
+
+.container {
+  max-width: 1440px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  padding: 45px;
+  width: 300px;
+
+  &__icon {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    color: $veryLightGray;
+    margin-bottom: 25px;
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 40px;
+  }
+
+  &__para {
+    color: $veryLightGray;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  &--orange {
+    background: $brightOrange;
+    border-radius: 10px 0 0 10px;
+  }
+
+  &--darkcyan {
+    background: $darkCyan;
+  }
+
+  &--verydarkcyan {
+    background: $veryDarkCyan;
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+.btn {
+  padding: 12px 25px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  background: $veryLightGray;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  border: 2px solid $veryLightGray;
+
+  &--orange {
+    color: $brightOrange;
+  }
+  &--orange:hover {
+    background: $brightOrange;
+  }
+
+  &--darkcyan {
+    color: $darkCyan;
+  }
+
+  &--darkcyan:hover {
+    background: $darkCyan;
+  }
+
+  &--verydarkcyan {
+    color: $veryDarkCyan;
+  }
+  &--verydarkcyan:hover {
+    background: $veryDarkCyan;
+  }
+
+  &:hover {
+    border: 2px solid $veryLightGray;
+    border-radius: 25px;
+    color: $veryLightGray;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .card {
+    padding: 20px;
+      width:250px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container__card {
+    margin: 40px 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .card {
+    width: 80%;
+    padding: 60px;
+
+    &--orange {
+      background: $brightOrange;
+      border-radius: 10px 10px 0 0;
+    }
+
+    &--darkcyan {
+      background: $darkCyan;
+    }
+
+    &--verydarkcyan {
+      background: $veryDarkCyan;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+
+  .btn {
+    padding: 12px 25px;
+    margin-top: 30px;
+    margin-bottom: -10px;
+  }
+}

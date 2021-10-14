@@ -1,0 +1,132 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 1440px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.container__card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  padding: 45px;
+  width: 300px;
+}
+.card__icon {
+  margin-bottom: 30px;
+}
+.card__title {
+  color: #f2f2f2;
+  margin-bottom: 25px;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+.card__para {
+  color: #f2f2f2;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.card--orange {
+  background: #e38826;
+  border-radius: 10px 0 0 10px;
+}
+.card--darkcyan {
+  background: #006970;
+}
+.card--verydarkcyan {
+  background: #004241;
+  border-radius: 0 10px 10px 0;
+}
+
+.btn {
+  padding: 12px 25px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  background: #f2f2f2;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  border: 2px solid #f2f2f2;
+}
+.btn--orange {
+  color: #e38826;
+}
+.btn--orange:hover {
+  background: #e38826;
+}
+.btn--darkcyan {
+  color: #006970;
+}
+.btn--darkcyan:hover {
+  background: #006970;
+}
+.btn--verydarkcyan {
+  color: #004241;
+}
+.btn--verydarkcyan:hover {
+  background: #004241;
+}
+.btn:hover {
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .card {
+    padding: 20px;
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container__card {
+    margin: 40px 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .card {
+    width: 80%;
+    padding: 60px;
+  }
+  .card--orange {
+    background: #e38826;
+    border-radius: 10px 10px 0 0;
+  }
+  .card--darkcyan {
+    background: #006970;
+  }
+  .card--verydarkcyan {
+    background: #004241;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .btn {
+    padding: 12px 25px;
+    margin-top: 30px;
+    margin-bottom: -10px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
