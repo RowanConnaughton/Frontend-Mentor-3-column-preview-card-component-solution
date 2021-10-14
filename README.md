@@ -10,7 +10,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://rowanconnaughton.github.io/Frontend-Mentor-3-column-preview-card-component-solution/)
+- Solution URL: [Solution URL](https://rowanconnaughton.github.io/Frontend-Mentor-3-column-preview-card-component-solution/)
 
 
 
